@@ -17,6 +17,9 @@
     <header>
       <div class="row justify-content-center text-center">
         <div class="col-12 text-center">
+          <div class="logotype_box">
+            <img src="img/logotype.png" alt="logotype">
+          </div>
           <div class="main_menu">
             <ul>
               <li><a href="#">Home</a></li>
@@ -32,28 +35,39 @@
       </div>
     </header>
     <section>
-      <div class="container-fluid mainscreen_section">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-12">
-            <p class="mainscreen_subheading">Our Clients Are Our First Priority</p>
-            <h1 class="mainscreen_heading">Welcome to Bino</h1>
-            <div class="title_dot"></div>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <div class="mainscreen_text">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="mainscreen_section" style="background-image: url('img/mainscreen_bg.jpg');">
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-12">
+              <p class="mainscreen_subheading">Our Clients Are Our First Priority</p>
+              <h1 class="mainscreen_heading">Welcome to Bino</h1>
+              <div class="title_dot"></div>
             </div>
           </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+              <div class="mainscreen_text">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center mainscreen_button_block">
+              <div class="col-sm-6 button_righted "> 
+                <button class="button first_button">Get started now</button>
+              </div>
+              <div class="col-sm-6 button_lefted">
+                <button class="button second_button">Learn more</button>
+              </div>
+          </div>
         </div>
-        <div class="row justify-content-center text-center mainscreen_button_block">
-          <div class="col-6 text-right">
-              <button class="mainscreen_button">Get started now</button>
+        <div class="triangle_block">
+          <div class="text-center triangle_box">
+            <div class="two_triangles">
+              <div class="circle_decorative">
+                <img class="circle_decorative_icon" src="img/mainscreen_icon_1.png" alt="mainscreen_icon_1">
+              </div>
             </div>
-            <div class="col-6 text-left">
-              <button class="mainscreen_button">Learn more</button>
-            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -110,8 +124,16 @@
     <section >
       <div class="container history_section">
       <div class="row">
-        <div class="col-md-12">
-          
+        <div class="col-md-5">
+          <img class="img img-fluid monitor_mockap" src="img/monitor_mockap.png" alt="monitor_mockap">
+        </div>
+        <div class="col-md-7">
+          <h2 class="section_heading left_red_border">Our history</h2>
+          <div class="history_text">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever since the 1500s, when an unk- nown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          <button class="button first_button">Browse our work</button>
         </div>
       </div>
       </div>
@@ -119,7 +141,10 @@
     <section >
       <div class="container-fluid services_section">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7 text-right services_block">
+          <h2 class="section_heading right_red_border services_heading">Our services</h2>
+        </div>
+        <div class="col-md-5">
           
         </div>
       </div>
@@ -210,11 +235,14 @@
       <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p>This text is in footer</p>
+          
+
         </div>
       </div>
       </div>
+
     </footer>
+    <div class="backtotop_button"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

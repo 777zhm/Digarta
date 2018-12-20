@@ -21,14 +21,18 @@
   src: url("/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
 }
 
-
-/* Start Bold font for tests*/
 @font-face {
-  font-family: "Bevan";
-  src: url("/fonts/Source_Sans_Pro/Bevan.ttf");
-  
+  font-family: "Source Sans Pro";
+  src: url("/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+  font-weight: bold;
 }
-/*END Bold font for tests*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
 
 
 body{
@@ -43,6 +47,29 @@ h1,h2,h3 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.section_heading{
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "Source Sans Pro";
+  color: rgb(106, 106, 106);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.left_red_border{
+  border-left: 6px solid rgb(231, 76, 60);
+  text-indent: 20px;
+}
+
+.right_red_border{
+  display: inline-block;
+  border-right: 6px solid rgb(231, 76, 60);
+  padding-right: 20px;
+}
+
+
+
 /* Start main_menu */
 header{
   background-color: transparent;
@@ -51,6 +78,12 @@ header{
   margin-top: 20px;
   z-index: 999;
 }
+
+.logotype_box{
+  position: absolute;
+  margin-left: 20px;
+}
+
 
 .main_menu ul {
   list-style-type: none;
@@ -70,14 +103,11 @@ header{
   text-align: center;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 400;
   padding-top: 22px;
   padding-bottom: 22px;
   position: relative;
-
-
-
 }
 
 .main_menu ul li a:after {
@@ -89,15 +119,14 @@ header{
   left: 0;
   border-bottom: 2px solid #e74c3c;
 
-
-    -webkit-transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .main_menu ul li a:hover {
   text-decoration: none;
-  
+  color: #e74c3c;
 }
 
 .main_menu ul li a:hover:after {
@@ -111,37 +140,39 @@ header{
   background-image: url("../img/mainscreen_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
   position: relative; 
 }
 
-.mainscreen_section:after{
+.mainscreen_section::before{
+  content: "";
   position: absolute; 
   top:0; 
   left:0; 
   height: 100%; 
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .mainscreen_subheading{
   color: #f4f5f9;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 24px;
+  font-size: 1.714em;
   font-weight: 400;
   letter-spacing: 1.2px;
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 .mainscreen_heading{
   color: #f4f5f9;
   font-family: "Open Sans", sans-serif;
-  font-size: 72px;
+  font-size: 5em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 7.2px;
 
   margin-top: 45px;
 }
+
 .mainscreen_text p{
   color: #cbc6c0;
   font-family: "Open Sans";
@@ -151,15 +182,9 @@ header{
   margin-bottom: 60px;
 }
 
-.mainscreen_button{
-  text-transform: uppercase;
-}
-
 .mainscreen_button_block{
   padding-bottom: 100px;
 }
-
-
 
 .title_dot{
   height: 7px;
@@ -191,13 +216,153 @@ header{
   margin-left: 15px;
 }
 
+.two_triangles{
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  position: relative;
+}
+
+.two_triangles:before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 0 0 50vw;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.two_triangles:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 50vw;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+
+.circle_decorative{
+  width: 74px;
+  height: 74px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  bottom: -40%;
+  z-index: 1;
+}
+
+.circle_decorative:after{
+  width: 64px;
+  height: 64px;
+  background-color: #f4f5f9;
+  margin: auto;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  margin-top: 5px;
+  z-index: 0;
+}
+
+.circle_decorative_icon{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
 /* End mainscreen_section */
+/* Start buttons */
+
+.button{
+  background-color: #e74c3c;
+  border: 2px solid #e74c3c;
+  border-radius: 3px;
+  
+  color: rgb(255, 255, 255);
+  font-size: 0.857em;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+
+  box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #ffffff; 
+  color: #e74c3c;
+}
+
+.first_button{
+  width: 225px;
+  height: 56px;
+}
+
+.second_button{
+  width: 225px;
+  height: 56px;
+ 
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.button_lefted{
+text-align: left;
+}
+
+.button_righted{
+text-align: right;
+}
+
+.backtotop_button{
+  position: fixed;
+  bottom: 3px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-image: url(../img/backtotop_icon.png);
+
+}
+
+.backtotop_button:hover {
+  opacity: 0.9;
+}
+
+/* End buttons */
 /* Start features_section */
+.features_section{
+  margin-top: 90px;
+}
+
 .features_item_heading{
   position: relative;
   color: #6a6a6a;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.285em;
   font-weight: bold;
   letter-spacing: 1.35px;
   padding-top: 20px;
@@ -205,55 +370,135 @@ header{
 
 .features_item_heading::after {
     content: "";
-    width: 41px;
+    width: 35px;
     position: absolute;
     margin: 0 auto;
-    height: 1px;
+    height: 0;
     background: #000;
     left: 0;
     right: 0;
     bottom: -10px;
+
+    border: 1.5px solid rgb(106, 106, 106);
 }
+
 
 .features_item_text{
   padding-top: 10px;
-  font-size: 12px;
   color: #999999;
   font-family: "Source Sans Pro";
-  font-size: 12px;
+  font-size: 0.857em;
   font-weight: bold;
   line-height: 20px;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.2px;
 }
 
 .features_item_icon_box{
   position: relative;
   height: 73px;
   width: 73px;
-  border: 1px solid #999999;
   margin: auto;
 }
 
-.features_item_icon{
-  position: relative;
+.features_item_icon> img{
+   position: absolute;
+  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.features_item_icon_box:after{
+  content: "";
   height: 73px;
   width: 73px;
+  position: absolute;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 2px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
-  line-height: 73px;
+
+  -webkit-transition: transform 0.6s ease-out;
+  -moz-transition: transform 0.6s ease-out;
+  -o-transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+}
+
+
+.feutures_item_icon_block{
+  cursor:pointer;
+}
+
+.feutures_item_icon_block:hover .features_item_icon_box:after{
+  -moz-transform: rotate(135deg); 
+  -ms-transform: rotate(135deg); 
+  -webkit-transform: rotate(135deg); 
+  -o-transform: rotate(135deg); 
+  transform: rotate(135deg);
+  
+  border: 2px solid #e74c3c;
 }
 
 .feutures_item_icon_block:hover .features_item_heading{
   color: #e74c3c;
-
-}
-
-.feutures_item_icon_block:hover .features_item_icon_box{
-  border: 1px solid #e74c3c;
-  transform: rotate(135deg);
-}
-
-.feutures_item_icon_block:hover .features_item_icon{
-  transform: rotate(-135deg);
 }
 
 /* End features_section */
+/* Start history_section */
+.history_section{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.history_text p{
+  font-size: 14px;
+  font-family: "Source Sans Pro";
+  color: rgb(153, 153, 153);
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+
+
+.monitor_mockap{
+  padding-right: 30px;
+}
+/* End features_section */
+
+.services_block{
+  background-color: #333;
+  height: 200px;
+}
+
+.services_heading{
+  margin-right: 40px;
+  color: #f4f5f9;
+}
+
+
+
+/* Media Query */
+@media only screen and (max-width: 992px)  {
+.mainscreen_heading{
+  font-size: 7vw;
+}
+
+} /*max-width: 992px*/
+
+@media only screen and (max-width: 540px)  {
+
+.button_lefted, .button_righted{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mainscreen_heading{
+  font-size: 10vw;
+}
+
+} /*max-width: 540px*/
