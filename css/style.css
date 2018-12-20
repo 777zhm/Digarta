@@ -638,7 +638,7 @@ text-align: right;
 }
 
 .portfolio_item:hover .portfolio_item_text{
-  bottom: 0;
+  bottom: 10%;
 }
 
 .portfolio_item:before{
@@ -647,7 +647,6 @@ text-align: right;
   -moz-transition: all 0.8s ease-out;
   -o-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
-
 }
 .portfolio_item:hover:before{
   content: "";
