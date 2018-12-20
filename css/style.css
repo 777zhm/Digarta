@@ -588,17 +588,19 @@ text-align: right;
   padding-top: 140px;
   font-size: 1em;
 }
+.portfolio{
+  font-size: 1em;
+}
 
 .portfolio h2{
   color: #6a6a6a;
   font-family: "Source Sans Pro";
-  font-size: 1em;
   font-size: 2.571em;
   font-weight: 700;
   letter-spacing: 3.6px;
 }
 
-.portfolio_header p{
+.portfolio_item_desc{
   color: #999999;
   font-family: "Open Sans";
   font-size: 1em;
@@ -641,10 +643,10 @@ text-align: right;
 
 .portfolio_item:before{
   content: "";
-  -webkit-transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
-  -o-transition: all 2s ease-out;
-  transition: all 2s ease-out;
+  -webkit-transition: all  0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
 
 }
 .portfolio_item:hover:before{
@@ -676,7 +678,7 @@ text-align: right;
   letter-spacing: 1.2px;
 }
 
-.portfolio_item_text p{
+.portfolio_item_text .portfolio_item_desc{
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 1em; /* 14px */
@@ -840,13 +842,23 @@ text-align: right;
 
 
 /* Media Query */
+
+@media only screen and (min-width: 992px) and (max-width: 1180px)  {
+
+.portfolio_item_text{
+  font-size: 0.9em;
+}
+
+}/*max-width: 992px to 1180px */
+
+
 @media only screen and (max-width: 992px)  {
 .mainscreen_heading{
   font-size: 7vw;
 }
 
 .portfolio_item{
-  height: 50vw;
+  height: 33.3333vw;
 }
 
 
