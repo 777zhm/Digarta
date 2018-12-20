@@ -533,8 +533,6 @@ text-align: right;
   font-weight: 400;
 }
 
-
-
 .service_item_icon_box{
   position: relative;
   text-align: right;
@@ -584,11 +582,107 @@ text-align: right;
   margin: auto;
   z-index: 1;
 }
-
-
 /* End services_section */
 /* Start works_section */
+.works_section{
+  padding-top: 140px;
+  font-size: 1em;
+}
 
+.portfolio h2{
+  color: #6a6a6a;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  font-size: 2.571em;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+}
+
+.portfolio_header p{
+  color: #999999;
+  font-family: "Open Sans";
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.portfolio_header .title_dot{
+  margin-top: 28px;
+  margin-bottom: 68px;
+}
+
+.portfolio_menu{
+  margin-bottom: 50px;
+}
+.portfolio_menu span{
+  margin-right: 20px;
+}
+
+.portfolio_item{
+  background-image: url("../img/works_item_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 25vw;
+}
+
+.portfolio_item_text{
+  position: absolute;
+  bottom: -100%;
+
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.portfolio_item:hover .portfolio_item_text{
+  bottom: 0;
+}
+
+.portfolio_item:before{
+  content: "";
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+
+}
+.portfolio_item:hover:before{
+  content: "";
+  position: absolute; 
+  top:0; 
+  left:0; 
+  height: 100%; 
+  width: 100%;
+  background-color: #e74c3c;
+  opacity: 0.8;
+}
+
+.portfolio_item_heading:before{
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 4px;
+  width: 44px;
+  top: -20px;
+}
+
+.portfolio_item_text .portfolio_item_heading{
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 1.714em; /* 24/14px */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.portfolio_item_text p{
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 1em; /* 14px */
+  font-weight: 400;
+  letter-spacing: 0.7px;
+}
 
 /* End works_section */
 /* Start casestudy_section */
@@ -655,9 +749,6 @@ text-align: right;
   font-weight: 400;
   letter-spacing: 0.9px;
 }
-
-
-
 /* End numbers_section */
 /* Start price_section */
 
@@ -748,20 +839,16 @@ text-align: right;
 
 
 
-
-
-
-
-
-
-
-
-
 /* Media Query */
 @media only screen and (max-width: 992px)  {
 .mainscreen_heading{
   font-size: 7vw;
 }
+
+.portfolio_item{
+  height: 50vw;
+}
+
 
 } /*max-width: 992px*/
 
@@ -770,10 +857,13 @@ text-align: right;
   font-size: 8vw;
 }
 
-
 .service_item_icon_box .circle_decorative{
   position: absolute;
   right: 10%;
+}
+
+.portfolio_item{
+  height: 50vw;
 }
 
 .calltoaction_section{
@@ -813,5 +903,10 @@ footer .copyright_block{
   text-align: center;
   margin-bottom: 20px;
 }
+
+.portfolio_item{
+  height: 100vw;
+}
+
 
 } /*max-width: 540px*/
