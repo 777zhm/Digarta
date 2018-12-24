@@ -897,15 +897,116 @@ color: #e74c3c;
 
 /* End team_section */
 /* Start partners_section */
+.partners_section{
+  background-color: #f4f5f9;
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+
+.partner_item{
+  position: relative;
+  height: 100px;
+  width: 210px;
+  box-shadow: 0 1px 3px rgba(31, 31, 31, 0.09);
+ margin-bottom: 20px;
+}
+
+.partner_item:before{
+  content: "";
+  position: absolute; 
+  top:0; 
+  left:0; 
+  height: 100%; 
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+}
+
+.partner_item:hover:before{
+  background-color: #e74c3c;
+  z-index: 0;
+  box-shadow: 0 3px 9px 1px rgba(31, 31, 31, 0.3);
+}
 
 
+.partner_item img{
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 /* End partners_section */
 /* Start blog_section */
 
 
 /* End blog_section */
 /* Start keepintouch_section */
+.keepintouch_section{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #f4f5f9;
+}
 
+.keepintouch_section .title_dot{
+  margin-top: 28px;
+  margin-bottom: 68px;
+}
+
+.keepintouch_section h3{
+  color: #e74e3e;
+  font-family: "Source Sans Pro";
+  margin-bottom: 20px;
+}
+
+.keepintouch_section p{
+  color: #999999;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact_box{
+  background-color: #ffffff;
+  padding-left: 90px;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.contact_item{
+  margin-bottom: 70px;
+}
+
+.formcontact_box{
+  background-color: #ffffff;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-bottom: 20px;
+}
+
+.formcontact input, .formcontact textarea{
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(153,153,153,0.25);
+}
+
+textarea{
+  resize: none;
+}
+
+.form-control:focus {
+    color: #000000;
+    background-color: #fff;
+    border-bottom-color: rgba(153,153,153,0.25);
+    border-color: rgba(153,153,153,0.25);
+    border-radius: 2px;
+    outline: 0;
+    box-shadow: 0 0 0 1px rgba(153,153,153,0.25);
+}
 
 /* End keepintouch_section */
 /* Start calltoaction_section */
@@ -970,15 +1071,11 @@ color: #e74c3c;
     margin-bottom: 20px;
   }
 /* Start footer */
-/* Start different sections css classes */
-
-/* End different sections css classes */
 
 
 
 
 /* Media Query */
-
 @media only screen and (min-width: 992px) and (max-width: 1180px)  {
 
 .portfolio_item_text{

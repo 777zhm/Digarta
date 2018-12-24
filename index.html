@@ -349,7 +349,7 @@
               </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-lg-4 col-md-6 price_item">
             <div class="price_item_header">
               <h3>Starter</h3>
@@ -422,16 +422,36 @@
       </div>
       </div>
     </section>
-    <section >
-      <div class="container partners_section">
-      <div class="row">
-        <div class="col-md-12">
-          
+    <section>
+      <div class="partners_section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-9 col-sm-11">
+                <div class="price_header text-center">
+                  <h2 class="section_heading">Great Integrations with Others</h2>
+                  <p>Suspendisse sed eros mollis, tincidunt felis eget, interdum erat. Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec. </p>
+                  <div class="title_dot"></div>
+                </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <div class="partner_item"><img src="img/partners/partners_1.png" alt="partners_1" class="img img-fluid"></div>
+            <div class="partner_item"><img src="img/partners/partners_2.png" alt="partners_2" class="img img-fluid"></div>
+            <div class="partner_item"><img src="img/partners/partners_3.png" alt="partners_3" class="img img-fluid"></div>
+            <div class="partner_item"><img src="img/partners/partners_4.png" alt="partners_4" class="img img-fluid"></div>
+            <div class="partner_item"><img src="img/partners/partners_5.png" alt="partners_5" class="img img-fluid"></div>
+          </div>
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <div class="partner_item"><img src="img/partners/partners_1.png" alt="partners_1" class="img img-fluid"></div>
+            <div class="partner_item"><img src="img/partners/partners_2.png" alt="partners_2" class="img img-fluid"></div>
+            <div class="partner_item"><img src="img/partners/partners_3.png" alt="partners_3" class="img img-fluid"></div>
+            <div class="partner_item"><img src="img/partners/partners_4.png" alt="partners_4" class="img img-fluid"></div>
+            <div class="partner_item"><img src="img/partners/partners_5.png" alt="partners_5" class="img img-fluid"></div>
+          </div>
         </div>
       </div>
-      </div>
     </section>
-    <section >
+    <section>
       <div class="container-fluid blog_section">
       <div class="row">
         <div class="col-md-12">
@@ -440,13 +460,73 @@
       </div>
       </div>
     </section>
-    <section >
-      <div class="container keepintouch_section">
-      <div class="row">
-        <div class="col-md-12">
-          
+    <section>
+      <div class="keepintouch_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <div class="price_header text-center">
+                  <h2 class="section_heading">Keep in touch</h2>
+                  <p>Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</p>
+                  <div class="title_dot"></div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="contact_box">
+                <div class="contact_item">
+                  <h3>Our address</h3>
+                  <p>House #13, Streat road, Sydney<br>
+                  2310 Australia</p>
+                </div>
+                <div class="contact_item">
+                  <h3>Call us</h3>
+                  <p>+ 880 168 109 1425<br>+ 0216809142</p>
+                </div>
+                <div class="contact_item">
+                  <h3>Email us</h3>
+                  <p>contactus@email.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <div class="formcontact_box">
+                <form id="formcontact" action="" method="post" class="formcontact needs-validation" novalidate="">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 col-10">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Name" required>
+                            <div class="invalid-feedback">
+                                Type your name
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-10">
+                            <input type="email" class="form-control" id="useremail" name="useremail" placeholder="Email" required>
+                            <div class="invalid-feedback">
+                                Type your e-mail.
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-10">
+                            <input type="tel" class="form-control" id="usersubject" name="usertel" placeholder="Subject" required>
+                            <div class="invalid-feedback">
+                                The topic of your question
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-10">
+                            <textarea class="form-control usertext" name="usertext" id="usertext" rows="5" maxlength="600" placeholder="Message" required></textarea>
+                            <div class="invalid-feedback">
+                                Describe your question here
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-10">
+                            <button type="submit" class="button first_button">Send message</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </section>
     <section >
@@ -494,6 +574,27 @@
     <script src="js/js_bootstrap/bootstrap.min.js"></script>
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    
+    <script>
+    // JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    </script>
 
   </body>
 </html>
