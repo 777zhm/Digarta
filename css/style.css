@@ -687,7 +687,11 @@ text-align: right;
 
 /* End works_section */
 /* Start casestudy_section */
-
+.casestudy_section{
+  background-color: #f4f5f9;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
 
 /* End casestudy_section */
 /* Start numbers_section */
@@ -772,7 +776,7 @@ text-align: right;
   background-color: #999999;
   padding-top: 50px;
 }
-.price_item_header:hover{
+.price_item:hover .price_item_header{
   background-color: #e74c3c;
 }
 
@@ -834,7 +838,7 @@ letter-spacing: 1.8px;
   font-weight: 700;
 }
 
-.price_item .circle_decorative:hover .circle_price{
+.price_item:hover .circle_price{
 color: #e74c3c;
 }
 
@@ -893,7 +897,11 @@ color: #e74c3c;
 
 /* End price_section */
 /* Start team_section */
-
+.team_section{
+  background-color: #202020;
+  padding-top: 150px;
+  padding-bottom: 145px;
+}
 
 /* End team_section */
 /* Start partners_section */
@@ -928,7 +936,6 @@ color: #e74c3c;
   box-shadow: 0 3px 9px 1px rgba(31, 31, 31, 0.3);
 }
 
-
 .partner_item img{
   margin: auto;
   position: absolute;
@@ -939,12 +946,16 @@ color: #e74c3c;
 }
 /* End partners_section */
 /* Start blog_section */
-
+.blog_section{
+  background-color: #f4f5f9;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
 
 /* End blog_section */
 /* Start keepintouch_section */
 .keepintouch_section{
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 150px;
   background-color: #f4f5f9;
 }
@@ -971,20 +982,24 @@ color: #e74c3c;
 .contact_box{
   background-color: #ffffff;
   padding-left: 90px;
-  padding-top: 90px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 35px;
   margin-bottom: 20px;
+
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact_item{
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .formcontact_box{
   background-color: #ffffff;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-bottom: 20px;
+
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .formcontact input, .formcontact textarea{
@@ -1001,11 +1016,8 @@ textarea{
 .form-control:focus {
     color: #000000;
     background-color: #fff;
-    border-bottom-color: rgba(153,153,153,0.25);
-    border-color: rgba(153,153,153,0.25);
-    border-radius: 2px;
-    outline: 0;
-    box-shadow: 0 0 0 1px rgba(153,153,153,0.25);
+    border-bottom-color: #e74e3e;
+    box-shadow: 0 0 0 0px rgba(153,153,153,0.25);
 }
 
 /* End keepintouch_section */
@@ -1153,5 +1165,6 @@ footer .copyright_block{
   height: 100vw;
 }
 
+.contact_box{padding-left: 40px}
 
 } /*max-width: 576px*/
