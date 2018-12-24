@@ -714,7 +714,6 @@ text-align: right;
   color: #f4f5f9;
 }
 
-
 .numbers_item_icon_box{
   height: 90px;
   width: 90px;
@@ -752,7 +751,145 @@ text-align: right;
 }
 /* End numbers_section */
 /* Start price_section */
+.price_section{
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
 
+.price_section .title_dot{
+  margin-top: 28px;
+  margin-bottom: 68px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.price_section .price_header{
+  color: #999999;
+}
+
+.price_item_header{
+  text-align: center;
+  background-color: #999999;
+  padding-top: 50px;
+}
+.price_item_header:hover{
+  background-color: #e74c3c;
+}
+
+.price_item_header h3{
+color: #ffffff;
+font-family: "Open Sans";
+font-size: 24px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1.8px;
+}
+
+.price_item_icon_box{
+  padding-top: 130px;
+  position: relative;
+}
+
+.price_item_icon_box > .circle_decorative{
+  width: 174px;
+  height: 174px;
+  position: absolute;
+  margin: auto;
+
+  bottom: -87px;
+  left: 0;
+  right: 0;
+}
+
+.price_item_icon_box > .circle_decorative:after{
+  width: 154px;
+  height: 154px;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  margin-top: 10px;
+  z-index: 0;
+}
+
+.circle_decorative .circle_price{
+  position: relative;
+  z-index: 10;
+  top:30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  color: #999999;
+  font-family: "Source Sans Pro";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.price_item .circle_decorative:hover .circle_price{
+color: #e74c3c;
+}
+
+.circle_price:before{
+  content: "from";
+  font-size: 13px;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.circle_price:after{
+  content: "per month";
+  font-size: 13px;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+
+  position: absolute;
+  top: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.price_item_footer{
+  text-align: center;
+  background-color: #f4f5f9;
+  padding-top: 125px;
+  color: #999999;
+}
+.price_item_footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.price_item_footer ul li{
+  margin-bottom: 14px;
+}
+
+.price_item_footer button{
+  margin-top: 36px;
+  margin-bottom: 50px;
+}
+
+.price_item{
+  margin-bottom: 20px;
+}
 
 /* End price_section */
 /* Start team_section */
@@ -907,7 +1044,7 @@ footer .copyright_block{
 
 @media only screen and (max-width: 576px)  {
 .mainscreen_heading{
-  font-size: 10vw;
+  font-size: 12vw;
 }
 
 .button_lefted, .button_righted{
@@ -920,4 +1057,4 @@ footer .copyright_block{
 }
 
 
-} /*max-width: 540px*/
+} /*max-width: 576px*/
