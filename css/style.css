@@ -692,18 +692,10 @@ text-align: right;
 }
 
 /* Start Mixitup filtering plugin */
-input:checked .radio-label{
-    border-bottom: 2px dotted #e74c3c;
+.mixitup-control-active {
+    background: #999999;
 }
 
-
-.controls input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
 
 
 
