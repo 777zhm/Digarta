@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Botstrap CDN CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <!-- Bootstrap CSS files -->
-    <link rel="stylesheet" href="css/css_bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -195,14 +193,14 @@
         </div>
         <div class="row">
           <div class="col-12 text-center">
-              <div class="portfolio_menu text-center">
-                <span>ALL</span>
-                <span>PRINT DESIGN</span>
-                <span>ANIMATION</span>
-                <span>ART</span>
-                <span>WEB DESIGN</span>
-                <span>PHOTOGRAPHY</span>
-                <span>VIDEO</span>
+              <div class="portfolio_menu">
+                  <button type="button" data-filter=".portfolio_all">ALL<button>
+                  <button type="button" data-filter=".print-design">PRINT DESIGN<button>
+                  <button type="button" data-filter=".animation">ANIMATION<button>
+                  <button type="button" data-filter=".art">ART<button>
+                  <button type="button" data-filter=".web-design">WEB DESIGN<button>
+                  <button type="button" data-filter=".photography">PHOTOGRAPHY<button>
+                  <button type="button" data-filter=".video">VIDEO<button>
               </div>
           </div>
         </div>
@@ -750,35 +748,16 @@
     <div class="backtotop_button"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- Botstrap CDN JS-->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    <!-- Botstrap JS files-->
-    <script src="js/js_bootstrap/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- mixitup filtration plugin -->
+    <script src="js/mixitup.min.js"></script>
+    <!-- Back to top button-->
+    <script src="js/backtotop.js"></script>
+    <script src="js/form_validator.js"></script>
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    
-    <script>
-    // JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                    if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                }, false);
-            });
-        }, false);
-    })();
-    </script>
-
   </body>
 </html>

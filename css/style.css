@@ -97,9 +97,15 @@ header{
   background-color: transparent;
   position: fixed;
   width: 100%;
-  margin-top: 20px;
+  padding-top: 16px;
+  padding-bottom: 8px;
   z-index: 999;
 }
+/* Start class for jQuery */
+.menu_fixed{
+  background-color: rgba(70,70,70, 0.7);
+}
+/* End class for jQuery */
 
 .logotype_box{
   position: absolute;
@@ -952,10 +958,11 @@ color: #e74c3c;
   position: absolute;
   width: 1px;
   height: 55px;
-  background-color: rgb(255, 255, 255, 0.75);
+  background-color: rgb(255, 255, 255, 0.25);
   left: 50%;
   bottom: -55px;
-  margin: auto;;
+  margin: auto;
+  text-align: center;
 }
 
 .timeline_item_text{
@@ -963,8 +970,10 @@ color: #e74c3c;
   display: none;
   color: #ffffff;
   top: 120px;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  left: -30px;
 }
 .timeline_item_text h4{
   color: #e74c3c;
@@ -1402,11 +1411,6 @@ border-width: 0 28px 35px 28px;
 border-color: transparent transparent #e74c3c transparent;
 }
 
-
-
-
-
-
 } /* End max-width: 575px */
 
 /* Start max-width: 767px */
@@ -1488,41 +1492,46 @@ footer .copyright_block{
   position: absolute;
   width: 55px;
   height: 1px;
-  background-color: rgb(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.25);
   left: -55px;
   bottom: 50%;
-  margin: auto;;
+  margin: auto;
+  text-align: center;
 }
 
 .timeline_item_text{
   position: absolute;
   display: none;
   color: #ffffff;
-  width: 140px;
-  height: 10px;
-  top: 0;
-  right: 60px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  top: 8px;
+  left: -170px;
 }
+
 
 .timeline_item_1.timeline_item:hover:before{
   content: "";
   position: absolute;
   width: 55px;
   height: 1px;
-  background-color: rgb(255, 255, 255, 0.75);
+  background-color: rgb(255, 255, 255, 0.25);
   left: 55px;
   bottom: 50%;
   margin: auto;
+  text-align: center;
 }
 
 .timeline_item_1 .timeline_item_text{
   position: absolute;
   display: none;
   color: #ffffff;
-  width: 150px;
-  height: 10px;
-  top: 0;
+  width: 120px;
+  height: 40px;
+  top: 8px;
   left: 115px;
+  text-align: center;
 }
 
 .timeline_item_text h4{
