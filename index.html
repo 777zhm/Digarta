@@ -194,11 +194,36 @@
         <div class="row">
           <div class="col-12 text-center">
               <div class="portfolio_menu controls">
-                  <button type="button" class="control" data-filter="all">All</button>
-                  <button type="button" class="control" data-toggle=".portfolio_wordpress">Wordpress</button>
-                  <button type="button" class="control" data-toggle=".portfolio_plugins">Plugins</button>
-                  <button type="button" class="control" data-toggle=".portfolio_vuejs">Vue.js</button>
-                  <button type="button" class="control" data-toggle=".portfolio_webdesign">Web Design</button>
+                  
+                    <span class="radio">
+                        <label class="radio-label">All
+                        <input name="color" type="radio" value="all" checked/>
+                        </label>
+                    </span>
+
+                    <span class="radio">
+                        <label class="radio-label">Wordpress
+                        <input name="color" type="radio" value=".portfolio_wordpress"/>
+                        </label>
+                    </span>
+
+                    <span class="radio">
+                        <label class="radio-label">Plugins
+                        <input name="color" type="radio" value=".portfolio_plugins"/>
+                        </label>
+                    </span>
+
+                    <span class="radio">
+                        <label class="radio-label">Vue.js
+                        <input name="color" type="radio" value=".portfolio_vuejs"/>
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <label class="radio-label">Web Design
+                        <input name="color" type="radio" value=".portfolio_webdesign"/>
+                        </label>
+                    </span>
+                  
               </div>
           </div>
         </div>
@@ -753,14 +778,27 @@
     <!-- mixitup filtration plugin -->
     <script src="js/mixitup.min.js"></script>
     <script>
-            var containerEl = document.querySelector('.mixitup_container');
+            // In this example, we must bind a 'change' event handler to
+            // our radios, then interact with the mixer via
+            // its .filter() API methods.
 
-            var mixer = mixitup(containerEl, {
-                controls: {
-                    toggleLogic: 'and'
-                }
+            var containerEl = document.querySelector('.mixitup_container');
+            var radiosFilter = document.querySelector('.controls');
+            
+
+            var mixer = mixitup(containerEl);
+
+            radiosFilter.addEventListener('change', function() {
+                var checked = radiosFilter.querySelector(':checked');
+
+                var selector = checked ? checked.value : 'all';
+
+                mixer.filter(selector);
             });
-    </script>
+        </script>
+
+
+
     <!-- Back to top button-->
     <script src="js/backtotop.js"></script>
     <script src="js/form_validator.js"></script>
