@@ -588,8 +588,8 @@ text-align: right;
   z-index: 1;
 }
 /* End services_section */
-/* Start works_section */
-.works_section{
+/* Start portfolio_section */
+.portfolio_section{
   padding-top: 140px;
   font-size: 1em;
 }
@@ -691,7 +691,16 @@ text-align: right;
   letter-spacing: 0.7px;
 }
 
-/* End works_section */
+/* Start Mixitup filtering plugin */
+.mixitup-control-active {
+    background: #999999;
+}
+
+
+
+
+/* End Mixitup filtering plugin */
+/* End portfolio_section */
 /* Start casestudy_section */
 .casestudy_section{
   background-color: #f4f5f9;
@@ -1337,10 +1346,7 @@ textarea{
     margin-top: 30px;
     margin-bottom: 20px;
   }
-/* Start footer */
-
-
-
+/* End footer */
 
 /* Media Query */
 /* Start max-width: 575px */
@@ -1571,9 +1577,3 @@ footer .copyright_block{
 }
 
 }/* End max-width: 992px and min-width: 1199px */
-
-
-
-
-
-
