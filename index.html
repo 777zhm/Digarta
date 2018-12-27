@@ -194,11 +194,11 @@
         <div class="row">
           <div class="col-12 text-center">
               <div class="portfolio_menu controls">
-                  <button type="button" class="control" data-filter="all">All</button>
-                  <button type="button" class="control" data-toggle=".portfolio_wordpress">Wordpress</button>
-                  <button type="button" class="control" data-toggle=".portfolio_plugins">Plugins</button>
-                  <button type="button" class="control" data-toggle=".portfolio_vuejs">Vue.js</button>
-                  <button type="button" class="control" data-toggle=".portfolio_webdesign">Web Design</button>
+                  <span class="control" data-filter="all">All</span>
+                  <span class="control" data-toggle=".portfolio_wordpress">Wordpress</span>
+                  <span class="control" data-toggle=".portfolio_plugins">Plugins</span>
+                  <span class="control" data-toggle=".portfolio_vuejs">Vue.js</span>
+                  <span class="control" data-toggle=".portfolio_webdesign">Web Design</span>
               </div>
           </div>
         </div>
@@ -757,7 +757,7 @@
 
             var mixer = mixitup(containerEl, {
                 controls: {
-                    toggleLogic: 'and'
+                    toggleLogic: 'or'
                 }
             });
     </script>

@@ -693,7 +693,7 @@ text-align: right;
 
 /* Start Mixitup filtering plugin */
 .mixitup-control-active {
-    background: #999999;
+    border-bottom: 3px dotted #e74c3c;
 }
 
 
