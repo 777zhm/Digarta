@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Botstrap CDN CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -96,12 +100,12 @@
           </div>
           <div class="col-md-3 col-sm-6 features_item">
            <div class="feutures_item_icon_block">
-            <div class="features_item_icon_box">
-              <div class="features_item_icon">
-                <img src="img/feature_icon_3.png" alt="feature_icon_3">
+              <div class="features_item_icon_box">
+                <div class="features_item_icon">
+                  <img src="img/feature_icon_3.png" alt="feature_icon_3">
+                </div>
               </div>
-            </div>
-              <h3 class="features_item_heading">Creative ideas</h3>
+                <h3 class="features_item_heading">Creative ideas</h3>
             </div>
             <p class="features_item_text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
           </div>
@@ -283,6 +287,27 @@
           </div>
           <div class="row">
             <div class="col-md-12">
+              <div class="owl-carousel">
+              </div>
+
+                <div class="slider_item_box">
+                  <div class="slider_item_background" style="background-image: url(img/slider_bg_1.jpg);"></div>
+                  <div class="slider_item">
+                    <div class="square_decorative_box">
+                      <div class="square_decorative">
+                        <div class="square_icon_box">
+                          <img src="img/slider_icon_3.png" alt="slider_icon_3">
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="slider_item_heading">Accumulate creative ideas</h3>
+                    <div class="slider_item_text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.
+                    </div>
+                    <button class="button first_button">Read more</button>
+                  </div>
+                </div>
+
               
             </div>
           </div>
@@ -779,6 +804,13 @@
           var checked = radiosFilter.querySelector(':checked');
           var selector = checked ? checked.value : 'all';
           mixer.filter(selector);
+      });
+    </script>
+    <!-- owlcarousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
       });
     </script>
     <!-- Back to top button-->
