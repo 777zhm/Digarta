@@ -286,28 +286,24 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
-              <div class="owl-carousel">
-                <div>1slide
-                  <img src="img/partners/partners_1.png" alt="">
+            <div class="col-md-6">
+              <div class="owl-carousel owl-theme">
+                <div>
+                  <h2>First Slide</h2>
                 </div>
-                <div>2slide
-                  <img src="img/partners/partners_2.png" alt="">
+                <div>
+                  <h2>Second Slide</h2>
                 </div>
-                <div>3slide
-                  <img src="img/partners/partners_1.png" alt="">
-                </div>
-                <div>4slide
-                  <img src="img/partners/partners_2.png" alt="">
-                </div>
-                <div>5slide
-                  <img src="img/partners/partners_1.png" alt="">
-                </div>
-
               </div>
+            </div>
+
+
+            <div class="col-md-12">
 
                 <div class="slider_item_box">
+
                   <div class="slider_item_background" style="background-image: url(img/slider_bg_1.jpg);"></div>
+
                   <div class="slider_item">
                     <div class="square_decorative_box">
                       <div class="square_decorative">
@@ -322,10 +318,39 @@
                     </div>
                     <button class="button first_button">Read more</button>
                   </div>
+
                 </div>
 
-              
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="new_casestudy_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="section_heading">Case study</h2>
+              <p>It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
+              <div class="title_dot"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="owl-carousel owl-theme">
+                <div>
+                  <h2>First Slide</h2>
+                </div>
+                <div>
+                  <h2>Second Slide</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="new_casestudy_slide_bg" style="background-image: url(img/slider_bg_1.jpg);"></div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -808,27 +833,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- mixitup filtration plugin -->
     <script src="js/mixitup.min.js"></script>
-    <script>
-      // In this example, we must bind a 'change' event handler to
-      // our radios, then interact with the mixer via
-      // its .filter() API methods.
-      var containerEl = document.querySelector('.mixitup_container');
-      var radiosFilter = document.querySelector('.controls');
-      var mixer = mixitup(containerEl);
-
-      radiosFilter.addEventListener('change', function() {
-          var checked = radiosFilter.querySelector(':checked');
-          var selector = checked ? checked.value : 'all';
-          mixer.filter(selector);
-      });
-    </script>
+    <script src="js/mixitup_config.js"></script>
     <!-- owlcarousel -->
     <script src="js/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".owl-carousel").owlCarousel();
-      });
-    </script>
+    <script src="js/owl.carousel_config.js"></script>
     <!-- Back to top button-->
     <script src="js/backtotop.js"></script>
     <script src="js/form_validator.js"></script>

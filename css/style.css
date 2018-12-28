@@ -835,6 +835,14 @@ input[type="radio"]:checked+label{
   }
 
 /* End casestudy_section */
+/* Start new_casestudy_section */
+
+.new_casestudy_slide_bg{
+  min-height: 600px;
+}
+
+
+/* End new_casestudy_section */
 /* Start numbers_section */
 .numbers_section{
   background-image: url("../img/numbers_bg.jpg");
