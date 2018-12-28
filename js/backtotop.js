@@ -17,3 +17,13 @@ $('.backtotop_button').click(function(){
         $('html,body').animate({ scrollTop: 0 } );
         return false; 
 });
+
+
+
+var headerHeight = $('header').outerHeight();
+
+$("#circle_decorative_anchor").click(function() {
+    $([document.documentElement, document.body]).animate({
+    	scrollTop: ($("#anchor_target").offset().top - headerHeight - 10) + 'px'
+    }, 400);
+});
