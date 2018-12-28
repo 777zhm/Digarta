@@ -1703,3 +1703,11 @@ footer .copyright_block{
 }
 
 }/* End max-width: 992px and min-width: 1199px */
+
+/* TEST */
+.under_constraction.mainscreen_section{
+ padding-top: 40px;
+ min-height: 100vh;
+}
+
+/* End TEST */
