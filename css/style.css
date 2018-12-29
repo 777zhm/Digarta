@@ -714,56 +714,34 @@ input[type="radio"]:checked+label{
 
 /* End Mixitup filtering plugin */
 /* End portfolio_section */
-/* Start OLD_casestudy_section */
-/*.slider_item_background{
-  width: 50%;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slider_item{
-  width: 60%;
-  position: absolute;
-  background-color: #fff;
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
-}*/
-/* End OLD_casestudy_section */
 /* Start new_casestudy_section */
-.new_casestudy_section{
+.casestudy_section{
   background-color: #f4f5f9;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
-.new_casestudy_slide_bg{
-  min-height: 600px;
+.casestudy_slide_bg{
+  position: absolute;
+  right: 5%;
+  z-index: 0;
+  width: 45%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
-
-
-
-
-/* Start new slider item */
-.slider_item_box{
-  padding-top: 40px;
-  padding-bottom: 40px;
+.casestudy_slide_block{
+  background-color: #fff;
+  padding: 40px 30px;
+  margin: 8% 0;
+  z-index: 1;
   position: relative;
-  min-height: 600px;
+  left: 15%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Start slider item */
 
 .slider_item_heading{
   font-size: 18px;
@@ -796,7 +774,7 @@ input[type="radio"]:checked+label{
   margin-top: 20px;
 }
 
-.new_slider_item button{
+.slider_item button{
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -841,6 +819,23 @@ input[type="radio"]:checked+label{
   transform: rotate(-135deg);
 }
 /* End squares for slider */
+/* Start Owlcarousel slide togglers */
+
+/*.owl-theme .owl-dots .owl-dot span {
+  background-color: #f4f5f9;
+}*/
+
+.owl-theme .owl-dots .owl-dot.active span{
+  background-color: #e74c3c;
+}
+/* End Owlcarousel slide togglers */
+/* Start test classes fp Owlcarousel */
+.test{
+  border: 3px dotted red;
+}
+
+
+/* End test classes fp Owlcarousel */
 /* End new_casestudy_section */
 /* Start numbers_section */
 .numbers_section{
